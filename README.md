@@ -1,50 +1,50 @@
-# Welcome to your Expo app 👋
+# 🌿 Flora Rehberim & Akıllı Bakım Asistanı
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Flora Rehberim, doğa ve bitki severlerin kendi dijital bahçelerini kurmalarını, bitkilerinin sulama takvimlerini yönetmelerini ve akıllı bot sistemiyle anında bitki bakımı tavsiyeleri almalarını sağlayan çapraz platform (Mobil & Web) uyumlu bir uygulamadır.
 
-## Get started
+Mersin Üniversitesi - Erdemli Uygulamalı Teknoloji ve İşletmecilik Yüksekokulu akademik proje geliştirme süreçleri kapsamında tasarlanmış ve geliştirilmiştir.
 
-1. Install dependencies
+## 🚀 Öne Çıkan Özellikler
 
-   ```bash
-   npm install
-   ```
+* **🌍 Kapsamlı Flora Rehberi:** Veritabanına kayıtlı bitkilerin mitolojik hikayelerinden, güneş ve iklim ihtiyaçlarına kadar tüm detaylı özelliklerini görüntüleme.
+* **🏡 Benim Bahçem (Kişisel Takip):** Kullanıcının sahip olduğu bitkileri kendi bahçesine eklemesi ve her bitkiye özel tanımlanan periyotlarla dinamik sulama takvimi oluşturulması.
+* **🤖 Flora Asistan (Yapay Zeka Destekli Bot):** Doğal Dil İşleme (NLP) mantığıyla çalışan, kelime yakalama (keyword extraction) algoritmasına sahip akıllı sohbet botu. Kullanıcının hastalık, saksı değişimi veya türe özel sulama sorularına anında yanıt verir.
+* **💻 Çapraz Platform Desteği:** React Native altyapısı sayesinde uygulamanın hem iOS/Android cihazlarda hem de web tarayıcılarında sorunsuz çalışabilmesi (Tarayıcı Header ve Alert uyumlulukları sağlanmıştır).
 
-2. Start the app
+## 🛠️ Kullanılan Teknolojiler
 
-   ```bash
-   npx expo start
-   ```
+**Frontend (Ön Yüz):**
+* React Native (Expo)
+* JavaScript / ES6+
+* Axios (REST API haberleşmesi)
 
-In the output, you'll find options to open the app in a
+**Backend (Arka Yüz) & Veritabanı:**
+* PHP (Özel yazılmış RESTful API servisleri)
+* MySQL (İlişkisel Veritabanı Mimarisi)
+* XAMPP (Yerel Sunucu Ortamı)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## ⚙️ Kurulum ve Çalıştırma
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
 
-## Get a fresh project
+1. **Veritabanı Kurulumu:**
+   * XAMPP üzerinden Apache ve MySQL servislerini başlatın.
+   * `phpMyAdmin` arayüzünden `flora_rehber` adında yeni bir veritabanı oluşturun.
+   * Proje içerisindeki SQL yedeğini bu veritabanına içe aktarın (Import).
 
-When you're ready, run:
+2. **API Ayarları:**
+   * Backend dosyalarını (`.php` uzantılı API dosyaları ve `resimler` klasörü) `C:\xampp\htdocs\flora_api` dizinine taşıyın.
 
-```bash
-npm run reset-project
-```
+3. **Uygulamayı Başlatma:**
+   * VS Code üzerinden projeyi açın ve terminalde gerekli bağımlılıkları yükleyin:
+     ```bash
+     npm install
+     ```
+   * `App.js` içerisindeki `BASE_URL` değişkenini kendi yerel IP adresinizle güncelleyin.
+   * Uygulamayı Expo üzerinden başlatın:
+     ```bash
+     npx expo start
+     ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 👨‍💻 Geliştirici
+**Ayşe Yalçın** *Yazılım Geliştiricisi & Öğrenci*
